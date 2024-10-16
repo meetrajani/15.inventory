@@ -1,0 +1,287 @@
+a {
+    text-decoration: none;
+}
+
+/* In your Tailwind CSS configuration or your custom styles */
+@keyframes scaleOnHover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+.scale-on-hover {
+    transition: all 0.5s;
+}
+.scale-on-hover:hover {
+    animation: scaleOnHover 0.5s;
+}
+
+.counter-box {
+    max-width: 70px;
+    padding: 0px 5px;
+    min-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+    color: #475f7b;
+    background-color: #fff;
+    border: 1px solid #dfe3e7;
+    transition: 0.3s;
+}
+
+.counter-box:focus {
+    color: #475f7b;
+    background-color: #fff;
+    border-color: #5a8dee;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.counter-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5a8dee2e;
+    color: #5a8dee;
+    font-size: 11px;
+    transition: 0.3s;
+}
+.counter-btn:hover {
+    background-color: #5a8dee;
+    color: white;
+}
+
+.viewsection-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* paymrts  */
+
+.form-control {
+    min-height:48px;
+    border-radius:8px;
+  }
+  button.pay-btn {
+    min-height:54px;
+  }
+  #cartTable td {
+    padding:6px;
+  }
+  #cartTable td:nth-of-type(2){
+    text-align:right
+  }
+  
+  #ticket:before {
+    content:"";
+    background:#fff;
+    width:32px;
+    height:32px;
+    position:absolute;
+    top:-16px;
+    left:-16px;
+    border-radius:100%;
+  }
+  #ticket:after {
+    content:"";
+    background:#fff;
+    width:32px;
+    height:32px;
+    position:absolute;
+    top:-16px;
+    right:-16px;
+    border-radius:100%;
+  }
+  #ticket {
+    background:#dde8f0;
+    border-top:1px dashed #bdbdbd;
+    position:relative;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+  }
+  #cardNumber {
+    padding-right:60px;
+  }
+  #cardType {
+    width:58px;
+    height:36px;
+    /* background:url('/static_files/images/cardLogos.png') no-repeat; */
+    background-size:auto 100%;
+    background-position: -59px;
+    position:absolute;
+    right:10px;
+    top:5px;
+  }
+
+  /* invoice  */
+
+  .wrapper-invoice {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper-invoice .invoice {
+    height: auto;
+    background: #fff;
+    padding: 5vh;
+    margin-top: 5vh;
+    max-width: 110vh;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+  }
+  .wrapper-invoice .invoice .invoice-information {
+    float: right;
+    text-align: right;
+  }
+  .wrapper-invoice .invoice .invoice-information b {
+    color: "#0F172A";
+  }
+  .wrapper-invoice .invoice .invoice-information p {
+    font-size: 2vh;
+    color: gray;
+  }
+  .wrapper-invoice .invoice .invoice-logo-brand h2 {
+    text-transform: uppercase;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 2.9vh;
+    color: "#0F172A";
+  }
+  .wrapper-invoice .invoice .invoice-logo-brand img {
+    max-width: 100px;
+    width: 100%;
+    object-fit: fill;
+  }
+  .wrapper-invoice .invoice .invoice-head {
+    display: flex;
+    margin-top: 8vh;
+  }
+  .wrapper-invoice .invoice .invoice-head .head {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .wrapper-invoice .invoice .invoice-head .client-info {
+    text-align: left;
+  }
+  .wrapper-invoice .invoice .invoice-head .client-info h2 {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-size: 2vh;
+    color: "#0F172A";
+  }
+  .wrapper-invoice .invoice .invoice-head .client-info p {
+    font-size: 2vh;
+    color: gray;
+  }
+  .wrapper-invoice .invoice .invoice-head .client-data {
+    text-align: right;
+  }
+  .wrapper-invoice .invoice .invoice-head .client-data h2 {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-size: 2vh;
+    color: "#0F172A";
+  }
+  .wrapper-invoice .invoice .invoice-head .client-data p {
+    font-size: 2vh;
+    color: gray;
+  }
+  .wrapper-invoice .invoice .invoice-body {
+    margin-top: 8vh;
+  }
+  .wrapper-invoice .invoice .invoice-body .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .wrapper-invoice .invoice .invoice-body .table thead tr th {
+    font-size: 2vh;
+    border: 1px solid #dcdcdc;
+    text-align: left;
+    padding: 1vh;
+    background-color: #eeeeee;
+  }
+  .wrapper-invoice .invoice .invoice-body .table tbody tr td {
+    font-size: 2vh;
+    border: 1px solid #dcdcdc;
+    text-align: left;
+    padding: 1vh;
+    background-color: #fff;
+  }
+  .wrapper-invoice .invoice .invoice-body .table tbody tr td:nth-child(2) {
+    text-align: right;
+  }
+  .wrapper-invoice .invoice .invoice-body .flex-table {
+    display: flex;
+  }
+  .wrapper-invoice .invoice .invoice-body .flex-table .flex-column {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .wrapper-invoice .invoice .invoice-body .flex-table .flex-column .table-subtotal {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2vh;
+  }
+  .wrapper-invoice .invoice .invoice-body .flex-table .flex-column .table-subtotal tbody tr td {
+    font-size: 2vh;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: left;
+    padding: 1vh;
+    background-color: #fff;
+  }
+  .wrapper-invoice .invoice .invoice-body .flex-table .flex-column .table-subtotal tbody tr td:nth-child(2) {
+    text-align: right;
+  }
+  .wrapper-invoice .invoice .invoice-body .invoice-total-amount {
+    margin-top: 1rem;
+  }
+  .wrapper-invoice .invoice .invoice-body .invoice-total-amount p {
+    font-weight: bold;
+    color: "#0F172A";
+    text-align: right;
+    font-size: 2vh;
+  }
+  .wrapper-invoice .invoice .invoice-footer {
+    margin-top: 4vh;
+  }
+  .wrapper-invoice .invoice .invoice-footer p {
+    font-size: 1.7vh;
+    color: gray;
+  }
+  
+  .copyright {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .copyright p {
+    color: gray;
+    font-size: 1.8vh;
+  }
+  
+  .dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+  margin-top: 20px;
+}
+
+.profile{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.login-final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
